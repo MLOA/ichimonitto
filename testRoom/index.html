@@ -1,0 +1,89 @@
+<!DOCTYPE html><!--room-->
+<html lang=ja>
+	<head>
+		<meta charset="utf-8">
+		<title>イチモニット</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script type="text/javascript" src="https://skyway.io/dist/v2/0.3/peer.js"></script>
+		<script type="text/javascript" src="../js/ecl.js"></script>
+
+		<script type="text/javascript" src="../js/GetQuestions1.js"></script>
+		<script type="text/javascript" src="../js/kick.js"></script>
+		<script type="text/javascript" src="../js/speech15.js"></script>
+		<script type="text/javascript" src="../js/call.js"></script>
+		<script type="text/javascript" src="../js/init0.js"></script>
+
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<img src="../img/ichimonitto.png">
+			</div><!--header-->
+
+			<div id="main">
+
+				<div id="question">	
+					<canvas id="Qcanvas"></canvas>
+						<script type="text/javascript" src="../js/viewquestion0.js"></script>
+				</div>
+				<div id="speech-buttons">
+					<input type="button" value="Answer" onclick="recognition.start();"/>
+					<input type="button" value="RecogEnd" onclick="recognition.stop();"/>
+					<div id="state">停止中</div>
+					<div id="question">	</div>
+				</div>
+			</div><!--main-->
+
+			<div class="clear">	</div>
+
+			<div id="footer">
+				<div id="users-area">
+
+					<div class="user-area">
+						<div id="P0-comment">test</div>
+						<div id="P0">
+							<video id="P0-video" muted="true" autoplay></video>
+						</div>
+					</div>
+					<div class="user-area">
+						<div id="P1-comment">test</div>
+						<div id="P1">
+							<video id="P1-video" autoplay></video>
+						</div>
+					</div>
+					<div class="user-area">
+						<div id="P2-comment">test</div>
+						<div id="P2">
+							<video id="P2-video" autoplay></video>
+						</div>
+					</div>
+					<div class="user-area">
+						<div id="P3-comment">test</div>
+						<div id="P3">
+							<video id="P3-video" autoplay></video>
+						</div>
+					</div>
+					<div class="user-area">
+						<div id="P4-comment">test</div>
+						<div id="P4">
+							<video id="P4-video" autoplay></video>
+						</div>
+					</div>
+					<div class="user-area">
+						<div id="P5-comment">test</div>
+						<div id="P5">
+							<video id="P5-video" autoplay></video>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<small>Copyright © MLOA All Rights Reserved</small>
+			</footer>
+
+		</div><!--container-->
+	</body>
+</html>

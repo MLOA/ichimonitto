@@ -1,0 +1,124 @@
+html {
+  overflow: auto;
+  font-family: Meiryo;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
+  overflow: hidden;
+	background-color: rgb(180, 250, 255);
+}
+
+.wrapper {
+  width: 950px;
+  margin: 0 auto;
+}
+
+#top-title {
+	background-color: white;
+	text-align: center;
+	border-radius: 15px;
+}
+
+header {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-left: -500%;
+  padding-left: 500%;
+  margin-right: -500%;
+  padding-right: 500%;
+  background-image: url("img/board.jpg");
+}
+#wall {
+  width: 100%;
+  height: 300px;
+}
+
+#selector {
+  margin-left: -500%;
+  padding-left: 500%;
+  margin-right: -500%;
+  padding-right: 500%;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 5px;
+}
+
+#selector b {
+	color: white;
+}
+
+.selectBtn {
+	width: 300px;
+	height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ccc;
+  margin: 10px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Meiryo;
+}
+
+#create,#join {
+	width: 100%;
+	text-align: center;
+  font-size: 24px;
+}
+#create select {
+  height: 24px;
+  font-size: 20px;
+}
+#create input, #join input {
+  height: 24px;
+  font-size: 20px;
+}
+#create button, #join button {
+  height: 30px;
+  font-size: 20px;
+}
+#join {
+  display: none;
+}
+
+#cloudn {
+  text-align: center;
+  font-size: 24px;
+}
+
+#main {
+  width:100%;
+  overflow: hidden;
+  margin: 20px;
+}
+
+#tweet {
+  width: 300px;
+  height: 400px;
+  float: left;
+  background-color: #bbbbff;
+}
+
+#text {
+	background-color: white;
+	border-radius: 30px;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+  float: right;
+  font-size: 15px;
+}
+#what, #how, #next{
+	border-bottom: 1px dotted;
+}
+
+footer {
+	border-top: 2px solid;
+  margin-left: -500%;
+  padding-left: 500%;
+  margin-right: -500%;
+  padding-right: 500%;
+  text-align: center;
+}
