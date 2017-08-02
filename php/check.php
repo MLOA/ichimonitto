@@ -6,7 +6,7 @@
 function h($str) { return htmlspecialchars($str, ENT_QUOTES, "UTF-8"); }
 
 function search2DB($_name,$_pass){
-  $dsn = 'mysql:dbname=ichimonitto;host=localhost';
+  $dsn = 'mysql:dbname=mloa_ichimonitto;host=localhost';
   $user = 'mloa';
   $password = 'mloa';
 
@@ -39,7 +39,7 @@ function search2DB($_name,$_pass){
 }
 
 function search2DB_2($_name){
-  $dsn = 'mysql:dbname=ichimonitto;host=localhost';
+  $dsn = 'mysql:dbname=mloa_ichimonitto;host=localhost';
   $user = 'mloa';
   $password = 'mloa';
 

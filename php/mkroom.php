@@ -7,7 +7,7 @@
 function h($str) { return htmlspecialchars($str, ENT_QUOTES, "UTF-8"); }
 
 function add2DB($_name, $_cate){
-  $dsn = 'mysql:dbname=ichimonitto;host=localhost';
+  $dsn = 'mysql:dbname=mloa_ichimonitto;host=localhost';
   $user = 'mloa';
   $password = 'mloa';
 

@@ -3,7 +3,7 @@
  $room=(string)$_GET['room'];
 
 function rmFromDB($_name){
-  $dsn = 'mysql:dbname=ichimonitto;host=localhost';
+  $dsn = 'mysql:dbname=mloa_ichimonitto;host=localhost';
   $user = 'mloa';
   $password = 'mloa';
 

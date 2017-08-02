@@ -6,7 +6,7 @@ function h($str) { return htmlspecialchars($str, ENT_QUOTES, "UTF-8"); }
 
 //サーチするやつ
 function search2DB($_room,$_yourid){
-  $dsn = 'mysql:dbname=ichimonitto;host=localhost';
+  $dsn = 'mysql:dbname=mloa_ichimonitto;host=localhost';
   $user = 'mloa';
   $password = 'mloa';
 
@@ -55,7 +55,7 @@ function search2DB($_room,$_yourid){
 
 //追加するやつ
 function add2DB($_room,$emptyN,$_yourid){
-  $dsn = 'mysql:dbname=ichimonitto;host=localhost';
+  $dsn = 'mysql:dbname=mloa_ichimonitto;host=localhost';
   $user = 'mloa';
   $password = 'mloa';
 
