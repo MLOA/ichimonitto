@@ -1,134 +1,93 @@
-<!DOCTYPE html><!--top-->
-<html>
+<!-- TOP -->
+<!DOCTYPE html>
+<html lang="ja">
 	<head>
-		<meta charset="utf-8">
 		<title>イチモニット</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="index-new.css">
+		<!-- Icon Font -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-
-		<script type="text/javascript">
-				$(function(){
-					$('#select-create').click(function(){
-						$('#create').css("display", "block");
-						$('#join').css("display", "none");
-					});
-					$('#select-join').click(function(){
-						$('#create').css("display", "none");
-						$('#join').css("display", "block");
-					});
-				});
-		</script>
-
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body>
-		<div class="wrapper">
-			<div id="top-title">
-				<div>
-					<img src="img/ichimonitto.png">
-				</div>
-				<!--<h1>イチモニット</h1>-->
-				<p>イチモニットは一問一答形式で友達と競い合いながら勉強できるサービスです。</p>
-			</div>
+		<header>
+			<img src="img/ichimonitto-logo.png">
+			<p>イチモニットは一問一答形式で友達と競い合いながら勉強できるサービスです。</p>
+		</header>
 
-
-			<header>
-				<div id="wall">
-					<!--<img src="img/board.jpg" height="400">-->
+		<main>
+			<section class="selector">
+				<div class="button-box">
+					<button class="select-create-button">新しいルームを作成</button>
+					<button class="select-join-button">ルームに参加</button>
 				</div>
 
-				<div id="selector">
-					<button class="selectBtn" id="select-create">新しいルームを作成</button>
-					<button class="selectBtn" id="select-join">ルームに参加</button>
-
-					<div id="create">
-						<select name="category">
-							<option value="1">英単語</option>
-						</select>
-						<tr>
-							<td align="right"><b>　ルーム名：</b></td>
-							<td><input id="rname" type="text" name="room"></td>
-						</tr>
-						<tr>
-							<!--<td align="right"><b>　パスワード：</b></td>-->
-							<td><input id="rpass" type="hidden" name="pass"></td>
-						</tr>
-						<button id="go" type="submit">GO！</button>
-						<input type="hidden" name="ctr" value="make">
-					</div>
-
-					<div id="join">
-						<tr>
-							<td align="right"><b>　参加したいルーム名：</b></td>
-							<td><input id="jname" type="text" name="room"></td>
-						</tr>
-						<tr>
-							<!--<td align="right"><b>　パスワード：</b></td>-->
-							<td><input id="jpass" type="hidden" name="pass"></td>
-						</tr>
-						<button id="join-button" type="submit">GO！</button>
-					</div>
-				</div>
-			</header>
-
-			<div id="cloudn">
-			<img src="img/keyvisual.png" height="132" width="211">
-				<p><a href="http://www.cloudn-service.com/cam04-deven/decon/index.html#campaing">Cloudn主催アプリケーションコンテスト</a>応募作品</p>
-				<p>投票は<a href="http://www.cloudn-service.com/cam04-deven/decon/tohyo/index.html">こちら</a>からお願いします。</p>
-			</div>
-
-			<div id="main">
-				<div id="tweet">
-					<a class="twitter-timeline" href="https://twitter.com/ichimonitto" data-widget-id="604329753609248768">@ichimonittoさんのツイート</a>
-
-					<script>
-					!function(d, s, id){
-						var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-						if(!d.getElementById(id)){
-							js=d.createElement(s);
-							js.id=id;
-							js.src=p+"://platform.twitter.com/widgets.js";
-							fjs.parentNode.insertBefore(js,fjs);
-						}
-					}(document,"script","twitter-wjs");
-					</script>
+				<div class="create-box" style="display:none">
+					<select name="category">
+						<option value="1">英単語</option>
+					</select>
+					<input class="room-name" type="text" placeholder="ルーム名">
+					<button class="create-button">
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
 				</div>
 
-				<div id="text">
-					<h3 id="what">イチモニットとは</h3>
+				<div class="join-box" style="display:none">
+					<input class="join-room-name" type="text" placeholder="参加するルーム名">
+					<button class="join-button" type="submit">
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
+				</div>
+			</section>
+			<section class="cloudn">
+				<img src="img/keyvisual.png">
+				<p>
+					<a href="http://www.cloudn-service.com/cam04-deven/decon/index.html#campaing">Cloudn主催アプリケーションコンテスト</a>
+					応募作品
+				</p>
+				<p>投票は
+					<a href="http://www.cloudn-service.com/cam04-deven/decon/tohyo/index.html">こちら</a>
+					からお願いします。
+				</p>
+			</section>
+			<section class="description-box">
+				<div class="description">
 					<div>
+						<h3>イチモニットとは</h3>
 						<p>イチモニットとは音声チャットを使った一問一答形式のクイズサイトです。<br>
 						イチモニットをつかえば、日々の英単語や暗記科目の勉強が楽しくできます。<br>
 						参加しているみんなと顔を合わせて競い合っちゃいましょう。<br>
 						マイクに向かって回答するので発音のチェックにも役立ちます。</p>
-					</div>
 
-					<div>
-						<h3 id="how">遊び方</h3>
+						<h3>遊び方</h3>
 						<p>挑戦したいジャンルと好きなルーム名を入力して部屋に入ります。<br>
 						ルーム名を友達にも教えて集まりましょう。<br>
 						次々に出てくる”一問一答”の問題に回答します。<br>
 						一番早く答えられた人がポイントゲット！<br>
 						カウントが0になったら時間切れ… 制限時間以内に応えられるかな？<br>
 						お金は一切かかりません。無料で遊べます。</p>
-					</div>
 
-					<div>
-						<h3 id="next">今後のアップデート予定</h3>
-						<li>画像問題に対応する</li>
-						<li>問題投稿機能をつける</li>
+						<h3>今後のアップデート予定</h3>
+						<ul>
+							<li>画像問題に対応する</li>
+							<li>問題投稿機能をつける</li>
+						</ul>
 					</div>
 				</div>
+				<div class="tweet">
+					<a class="twitter-timeline" href="https://twitter.com/ichimonitto">Tweets by @ichimonitto</a>
+					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>Copyright © MLOA All Rights Reserved.</p>
+		</footer>
 
-			</div>
-		<div>
-			<footer>
-				<small>Copyright © MLOA All Rights Reserved</small>
-			</footer>
-		</div><!-- wrapper-->
-
-		<script src="P/ichimonitto/index.htmlost.js"></script>
+		<script src="js/top.js"></script>
 	</body>
 </html>
