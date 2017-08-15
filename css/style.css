@@ -1,91 +1,93 @@
-/* top */
-html, body {
-	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
-	background-color: rgb(180, 250, 255);
-	margin: 0;
-}
+// Ichimonitto postcss
+
 h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
 }
 img, video {
 	vertical-align: bottom;
 }
-
-header {
+html, body {
+	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
+	background-color: rgb(180, 250, 255);
+	margin: 0
+}
+html header, body header {
 	background: white;
 	width: 100%;
 	max-width: 600px;
+	margin: 8px auto;
 	margin: 0.5rem auto;
 	padding: 10px;
 	border-radius: 6px;
 }
-
-header img {
+html header img, body header img {
 	width: 100%;
 }
-
-header p {
+html header p, body header p {
+	font-size: 16px;
 	font-size: 1rem;
 	margin: 0 auto;
 	text-align: center;
 }
-
-main {
+html main, body main {
 	max-width: 960px;
 	margin: 0 auto;
 }
-
-main section {
+html main section, body main section {
+	margin: 16px auto;
 	margin: 1rem auto;
 }
-
-main section.selector {
+html main section.selector, body main section.selector {
 	height: 400px;
 	background: url("../img/board.jpg");
 	text-align: center;
 }
-
-main section.selector div.button-box {
+html main section.selector div.button-box, body main section.selector div.button-box {
 	padding-top: 200px;
 }
-
-main section.selector div.button-box button {
+html main section.selector div.button-box button, body main section.selector div.button-box button {
 	display: inline-block;
 	padding: 0.3em 1em;
 	text-decoration: none;
 	color: white;
-	background: rgba(51, 51, 51, 0.6);
+	background: rgba(51, 51, 51, .6);
 	border: solid 2px white;
 	border-radius: 3px;
 	cursor: pointer;
+	margin: 8px;
 	margin: 0.5rem;
 }
-main section.selector div.button-box button:hover {
-	background: rgba(255, 255, 255, 0.6);
+html main section.selector div.button-box button:hover, body main section.selector div.button-box button:hover {
+	background: rgba(255, 255, 255, .6);
 }
-
-main section.selector div.create-box {
+html main section.selector div.create-box, body main section.selector div.create-box {
 	color: white;
+	margin: 32px auto;
 	margin: 2rem auto;
 }
-main section.selector div.create-box select {
+html main section.selector div.create-box select, body main section.selector div.create-box select {
+	height: 32px;
 	height: 2rem;
 	border-radius: 3px;
 }
-main section.selector div.create-box input.room-name {
+html main section.selector div.create-box input.room-name, body main section.selector div.create-box input.room-name {
 	border-radius: 3px;
 	border: 0;
+	padding: 0 8px;
 	padding: 0 0.5rem;
+	height: 32px;
 	height: 2rem;
 }
-main section.selector div.create-box button {
+html main section.selector div.create-box button, body main section.selector div.create-box button {
 	display: inline-block;
 	padding: 0;
+	width: 32px;
 	width: 2rem;
+	height: 32px;
 	height: 2rem;
 	text-decoration: none;
 	color: white;
-	background: rgba(51, 51, 51, 0.6);
+	background: rgba(51, 51, 51, .6);
 	border: solid 2px white;
 	border-radius: 50%;
 	text-align: center;
@@ -93,27 +95,32 @@ main section.selector div.create-box button {
 	margin: 0;
 	outline:none;
 }
-main section.selector div.create-box button:hover {
-	background: rgba(255, 255, 255, 0.6);
+html main section.selector div.create-box button:hover, body main section.selector div.create-box button:hover {
+	background: rgba(255, 255, 255, .6);
 }
-main section.selector div.join-box {
+html main section.selector div.join-box, body main section.selector div.join-box {
 	color: white;
+	margin: 32px auto;
 	margin: 2rem auto;
 }
-main section.selector div.join-box input.join-room-name {
+html main section.selector div.join-box input.join-room-name, body main section.selector div.join-box input.join-room-name {
 	border-radius: 3px;
 	border: 0;
+	padding: 0 8px;
 	padding: 0 0.5rem;
+	height: 32px;
 	height: 2rem;
 }
-main section.selector div.join-box button {
+html main section.selector div.join-box button, body main section.selector div.join-box button {
 	display: inline-block;
 	padding: 0;
+	width: 32px;
 	width: 2rem;
+	height: 32px;
 	height: 2rem;
 	text-decoration: none;
 	color: white;
-	background: rgba(51, 51, 51, 0.6);
+	background: rgba(51, 51, 51, .6);
 	border: solid 2px white;
 	border-radius: 50%;
 	text-align: center;
@@ -121,85 +128,84 @@ main section.selector div.join-box button {
 	margin: 0;
 	outline:none;
 }
-main section.selector div.join-box button:hover {
-	background: rgba(255, 255, 255, 0.6);
+html main section.selector div.join-box button:hover, body main section.selector div.join-box button:hover {
+	background: rgba(255, 255, 255, .6);
 }
-
-main section.cloudn {
+html main section.cloudn, body main section.cloudn {
 	text-align: center;
+	margin: 16px auto;
 	margin: 1rem auto;
 }
-
-main section.description-box {
+html main section.description-box, body main section.description-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
-
-main section div.description {
+html main section.description-box div.description, body main section.description-box div.description {
 	width: 70%;
 }
-
-main section div.description div {
+html main section.description-box div.description div, body main section.description-box div.description div {
 	background: white;
 	border-radius: 6px;
+	margin: 0 16px;
 	margin: 0 1rem;
+	padding: 16px;
 	padding: 1rem;
 }
-
-main section div.description div h3 {
+html main section.description-box div.description div h3, body main section.description-box div.description div h3 {
+	padding: 8px 0;
 	padding: 0.5rem 0;
 	border-bottom: solid 3px #68b7bd;
 }
-
-main section div.description div p {
+html main section.description-box div.description div p, body main section.description-box div.description div p {
+	padding: 8px 0;
 	padding: 0.5rem 0;
 }
-
-main section div.description div ul {
+html main section.description-box div.description div ul, body main section.description-box div.description div ul {
+	padding: 8px 32px;
 	padding: 0.5rem 2rem;
 }
-
-main section div.tweet {
+html main section.description-box div.tweet, body main section.description-box div.tweet {
 	background: white;
 	border-radius: 6px;
+	margin: 0 16px 0 0;
 	margin: 0 1rem 0 0;
 	width: 30%;
 }
-
-footer {
-	text-align: center;
-	padding: 0.5rem 0;
-	border-top: solid 3px #68b7bd;
-}
-
-/* room */
-main section.canvas-box {
-	text-align: center;
-}
-main section canvas {
+html main section.canvas-box canvas, body main section.canvas-box canvas {
 	width: 100%;
 	background: white;
+	border-radius: 6px;
 }
-main section.user-view {
+html main section.user-view, body main section.user-view {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
-main section.user-view div {
+html main section.user-view div.user-area, body main section.user-view div.user-area {
 	text-align: center;
 	width: 16%;
-	 display: flex;
-	flex-direction: column;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
-
-main section.user-view div span.user-answer {
+html main section.user-view div.user-area span.user-answer, body main section.user-view div.user-area span.user-answer {
 	display: inline-block;
 	border-radius: 6px;
 	background: white;
 	margin-bottom: 10px;
+	padding: 8px;
 	padding: 0.5rem;
 	position: relative;
 }
-
-main section.user-view div span.user-answer:after {
+html main section.user-view div.user-area span.user-answer:after, body main section.user-view div.user-area span.user-answer:after {
 	border-left: solid 7px transparent;
 	border-right: solid 7px transparent;
 	border-top: solid 10px white;
@@ -208,33 +214,45 @@ main section.user-view div span.user-answer:after {
 	left: 45%;
 	position: absolute;
 }
-
-main section.user-view div.user-area div.user-video-box {
+html main section.user-view div.user-area div.user-video-box, body main section.user-view div.user-area div.user-video-box {
 	width: 100%;
 	height: 145px;
 	border-radius: 6px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
-
-main section.user-view div.user-area div.user-video-box.box0 {
+html main section.user-view div.user-area div.user-video-box.box0, body main section.user-view div.user-area div.user-video-box.box0 {
 	background: red;
 }
-main section.user-view div.user-area div.user-video-box.box1 {
+html main section.user-view div.user-area div.user-video-box.box1, body main section.user-view div.user-area div.user-video-box.box1 {
 	background: blue;
 }
-main section.user-view div.user-area div.user-video-box.box2 {
+html main section.user-view div.user-area div.user-video-box.box2, body main section.user-view div.user-area div.user-video-box.box2 {
 	background: green;
 }
-main section.user-view div.user-area div.user-video-box.box3 {
+html main section.user-view div.user-area div.user-video-box.box3, body main section.user-view div.user-area div.user-video-box.box3 {
 	background: yellow;
 }
-main section.user-view div.user-area div.user-video-box.box4 {
+html main section.user-view div.user-area div.user-video-box.box4, body main section.user-view div.user-area div.user-video-box.box4 {
 	background: pink;
 }
-main section.user-view div.user-area div.user-video-box.box5 {
+html main section.user-view div.user-area div.user-video-box.box5, body main section.user-view div.user-area div.user-video-box.box5 {
 	background: black;
 }
-main section.user-view div.user-area div.user-video-box video {
+html main section.user-view div.user-area div.user-video-box video, body main section.user-view div.user-area div.user-video-box video {
 	width: 100%;
 	background: white;
-	margin: auto;
+}
+html footer, body footer {
+	text-align: center;
+	padding: 8px 0;
+	padding: 0.5rem 0;
+	border-top: solid 3px #68b7bd;
 }
