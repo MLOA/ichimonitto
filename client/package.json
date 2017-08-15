@@ -20,7 +20,7 @@
   "dependencies": {},
   "scripts": {
     "build:js": "webpack",
-    "build:pug": "pug src/pug/index.pug -o dist/ -P",
+    "build:pug": "pug pug/top/index.pug -o ../  -P && pug pug/room/index.pug -o ../testRoom  -P",
     "build:postcss": "postcss postcss/*.css -d ../css/ --no-map -u postcss-import postcss-cssnext",
     "build": "npm-run-all build:*",
     "watch:js": "npm run build:js -- -w",
