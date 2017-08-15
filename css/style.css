@@ -1,12 +1,14 @@
 /* top */
 html, body {
-  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
+	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
 	background-color: rgb(180, 250, 255);
 	margin: 0;
 }
-
 h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
+}
+img, video {
+	vertical-align: bottom;
 }
 
 header {
@@ -167,4 +169,72 @@ footer {
 	text-align: center;
 	padding: 0.5rem 0;
 	border-top: solid 3px #68b7bd;
+}
+
+/* room */
+main section.canvas-box {
+	text-align: center;
+}
+main section canvas {
+	width: 100%;
+	background: white;
+}
+main section.user-view {
+	display: flex;
+	justify-content: space-between;
+}
+main section.user-view div {
+	text-align: center;
+	width: 16%;
+	 display: flex;
+	flex-direction: column;
+}
+
+main section.user-view div span.user-answer {
+	display: inline-block;
+	border-radius: 6px;
+	background: white;
+	margin-bottom: 10px;
+	padding: 0.5rem;
+	position: relative;
+}
+
+main section.user-view div span.user-answer:after {
+	border-left: solid 7px transparent;
+	border-right: solid 7px transparent;
+	border-top: solid 10px white;
+	bottom: -10px;
+	content: "";
+	left: 45%;
+	position: absolute;
+}
+
+main section.user-view div.user-area div.user-video-box {
+	width: 100%;
+	height: 145px;
+	border-radius: 6px;
+}
+
+main section.user-view div.user-area div.user-video-box.box0 {
+	background: red;
+}
+main section.user-view div.user-area div.user-video-box.box1 {
+	background: blue;
+}
+main section.user-view div.user-area div.user-video-box.box2 {
+	background: green;
+}
+main section.user-view div.user-area div.user-video-box.box3 {
+	background: yellow;
+}
+main section.user-view div.user-area div.user-video-box.box4 {
+	background: pink;
+}
+main section.user-view div.user-area div.user-video-box.box5 {
+	background: black;
+}
+main section.user-view div.user-area div.user-video-box video {
+	width: 100%;
+	background: white;
+	margin: auto;
 }
