@@ -1,6 +1,8 @@
 // Ichimonitto postcss
-
-h1, h2, h3, h4, h5, h6, p, ul {
+h1, h2, h3, h4, h5, h6, ul {
+	margin: 0;
+}
+p {
 	margin: 0;
 }
 img, video {
@@ -172,10 +174,30 @@ html main section.description-box div.tweet, body main section.description-box d
 	margin: 0 1rem 0 0;
 	width: 30%;
 }
-html main section.canvas-box canvas, body main section.canvas-box canvas {
+html main section.quiz-view-box .quiz-view, body main section.quiz-view-box .quiz-view {
+	position: relative;
 	width: 100%;
+	height: 70vh;
 	background: white;
 	border-radius: 6px;
+}
+html main section.quiz-view-box .quiz-view .top-right-text, body main section.quiz-view-box .quiz-view .top-right-text {
+	position: relative;
+	top: 0;
+	right: 0;
+	display: block;
+	text-align: right;
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+html main section.quiz-view-box .quiz-view .center-text, body main section.quiz-view-box .quiz-view .center-text {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 24px;
+	font-size: 1.5rem;
 }
 html main section.user-view, body main section.user-view {
 	display: -webkit-box;

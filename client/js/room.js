@@ -1,3 +1,3 @@
-import api from './api'
+import api from './modules/api'
 
-console.log("room.js")
+console.log('room.js')
