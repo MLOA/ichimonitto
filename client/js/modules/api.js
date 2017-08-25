@@ -9,11 +9,14 @@ export default class {
 	}
 	static createRoom(category, roomName) {
 		console.log('create', arguments)
-		var url = '../php/mkroom.php'
-		var sendData = new FormData()
+		const url = '../php/mkroom.php'
+		const sendData = new FormData()
+		sendData.append("ctr", 'make')
 		sendData.append("cate", category)
 		sendData.append("room", roomName)
-		this.post(url, sendData)
+		return this.post(url, sendData).then(res => {
+			return res.text()
+		})
 	}
 	static joinRoom(roomName) {
 		console.log('join', arguments)

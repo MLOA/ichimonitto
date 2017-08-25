@@ -15,14 +15,10 @@ document.querySelector(".select-join-button").addEventListener("click", e => {
 document.querySelector(".create-button").addEventListener("click", e => {
 	var category = document.querySelector("select").value
 	var roomName = document.querySelector(".room-name").value
+
 	api.createRoom(category, roomName).then(res => {
-		if (!res.ok) {
-			console.log("create error", res)
-			alert("error")
-		} else {
-			var res = res.json()
-			window.location = "./\/" + roomName
-		}
+		console.log("text", res)
+		window.location = "/" + roomName
 	})
 })
 
