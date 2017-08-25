@@ -6,6 +6,3 @@ WebRTCを用いたクイズ番組風学習支援アプリ
 
 ## Award
 CloudnアプリケーションコンテストWebRTC賞 [webサイト](http://www.cloudn-service.com/cam04-deven/decon/tohyo/)
-
-# ごめんなさい
-です
