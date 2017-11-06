@@ -3,15 +3,14 @@ export default class {
 		return fetch(url, {
 			method: 'POST',
 			mode: 'cors',
-			credentials: 'include',
+			// credentials: 'include',
 			body: sendData
 		})
 	}
 	static createRoom(category, roomName) {
 		console.log('create', arguments)
-		const url = '../php/mkroom.php'
+		const url = 'api/mkroom'
 		const sendData = new FormData()
-		sendData.append("ctr", 'make')
 		sendData.append("cate", category)
 		sendData.append("room", roomName)
 		return this.post(url, sendData).then(res => {

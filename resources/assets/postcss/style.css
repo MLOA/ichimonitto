@@ -35,7 +35,6 @@ html, body {
 			margin: 1rem auto;
 			&.selector {
 				height: 400px;
-				background: url("../img/board.jpg");
 				text-align: center;
 				& div.button-box {
 					padding-top: 200px;

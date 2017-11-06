@@ -41,7 +41,6 @@ html main section, body main section {
 }
 html main section.selector, body main section.selector {
 	height: 400px;
-	background: url("../img/board.jpg");
 	text-align: center;
 }
 html main section.selector div.button-box, body main section.selector div.button-box {

@@ -8,10 +8,10 @@
     <!-- Icon Font-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Style-->
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header><img src="/static/img/ichimonitto-logo.png">
+    <header><img src="img/ichimonitto-logo.png">
       <p>イチモニットは一問一答形式で友達と競い合いながら勉強できるサービスです。</p>
     </header>
     <main>
@@ -32,7 +32,7 @@
           <button class="join-button" type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </div>
       </section>
-      <section class="cloudn"><img src="/static/img/keyvisual.png">
+      <section class="cloudn"><img src="img/keyvisual.png">
         <p><a href="http://www.cloudn-service.com/cam04-deven/decon/index.html#campaing">Cloudn主催アプリケーションコンテスト</a>					応募作品</p>
         <p>投票は<a href="http://www.cloudn-service.com/cam04-deven/decon/tohyo/index.html">こちら</a>					からお願いします。</p>
       </section>
@@ -58,6 +58,6 @@
     <footer>
       <p>Copyright © MLOA All Rights Reserved.</p>
     </footer>
-    <script src="/static/js/top.js"></script>
+    <script src="js/top.js"></script>
   </body>
 </html>
